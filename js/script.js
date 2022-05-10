@@ -1,21 +1,31 @@
 // VARIABLES
-const URL = "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/id/1.json"
+const URL = "https://www.superheroapi.com/api.php/338148107599656/search/";
 
 // ELEMENT REFERENCES
+const $charCard = $(".get-char");
+const $name = $(".name");
+const $species = $(".species");
+const $input = $("input[type='text']");
 
 // EVENT LISTENERS
 $("document").ready(function(){
-    console.log("Success!");
-    dataReady();
+    $("form").on("submit", handleGetData);
 })
 
 // FUNCTIONS
-function dataReady(){
-    $.ajax(URL).then((data) => {
+function handleGetData(event) {
+    event.preventDefault();
+    userInput = $input.val()
+    $.ajax(URL + userInput).then((data) => {
         console.log(data)
-    },
-    (error) => {
-        console.log("bad request", error)
-    }
-    )
+        render(data);
+        },
+        (error) => {
+            console.log("bad request", error);
+    });
+}
+
+function render(data) {
+    $name.text(`Name: ${data.results[0].name}`)
+    $species.text(`Species: ${data.results[0].appearance.race}`)
 }
