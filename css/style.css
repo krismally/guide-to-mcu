@@ -59,13 +59,18 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    color: whitesmoke;
+    background-image: linear-gradient(rgba(0, 0, 0 ,0.3), rgba(0,0,0,0.6)),
+                      url('../space.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 header {
     background: #EC1D23;
     padding: 35px;
     text-align: center;
-    color: whitesmoke;
     font-size: 42px;
 }
 
@@ -88,3 +93,4 @@ footer {
     padding: 20px;
     
 }
+
