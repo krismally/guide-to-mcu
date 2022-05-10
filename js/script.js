@@ -1,13 +1,21 @@
 // VARIABLES
-const privKey = "88d62536fe485fc62ff2e3eb075a4cb9b14616ea"
-const pubKey = "6ec8fb5a2eeca354fabae121f1746475"
-const URL = ""
-
-
+const URL = "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/id/1.json"
 
 // ELEMENT REFERENCES
 
 // EVENT LISTENERS
 $("document").ready(function(){
     console.log("Success!");
+    dataReady();
 })
+
+// FUNCTIONS
+function dataReady(){
+    $.ajax(URL).then((data) => {
+        console.log(data)
+    },
+    (error) => {
+        console.log("bad request", error)
+    }
+    )
+}
