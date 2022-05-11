@@ -95,6 +95,20 @@ main {
 
 .char-card {
     color: black;
+    width: 400px;
+    height: 600px;
+    padding: 20px;
+    gap: 40px;
+    line-height: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background: #797676;
+}
+
+.char-picture {
+    width: 250px;
 }
 
 footer {
