@@ -19,7 +19,7 @@ $("document").ready(function(){
     $($charCard).hide();
     $($infGauntlet).click(randomChar)
     $("form").on("submit", handleGetData);
-    $($close).click(removeCard)
+    $($close).click(removeCard);
 })
 
 // FUNCTIONS
