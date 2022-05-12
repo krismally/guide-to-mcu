@@ -184,7 +184,6 @@ header, .credits {
 }
 
 a {
-    font-family: 'Oswald', sans-serif;
     text-decoration: none;
 }
 
@@ -193,9 +192,11 @@ a:hover {
 }
 
 footer {
+    font-family: 'Oswald', sans-serif;
     text-align: center;
     padding: 20px;
     background: rgb(235, 30, 37, .9);
+    line-height: 25px;
 }
 
 @media only screen and (max-width: 500px) {
