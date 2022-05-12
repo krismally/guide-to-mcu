@@ -176,3 +176,35 @@ footer {
     padding: 20px;
     background: rgb(235, 30, 37, .9);
 }
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 40px;
+        letter-spacing: -2.5px;
+    }    
+
+    .get-character {
+        width: 90vw;
+    }
+
+    .char-card {
+        display: block;
+        flex-direction: column;
+        width: 100vw;
+        height: 780px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .char-picture {
+        width: 185px;
+    }
+
+    ul {
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 280px;
+        flex: 1;
+        text-align: left;
+    }
+}
