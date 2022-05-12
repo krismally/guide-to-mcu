@@ -60,7 +60,6 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    color: whitesmoke;
     background-image: linear-gradient(rgba(0, 0, 0 ,0.3), rgba(0,0,0,0.3)),
                       url('../assets/space.gif');
     background-repeat: no-repeat;
@@ -71,7 +70,7 @@ body {
 header {
     font-family: 'Oswald', sans-serif;
     letter-spacing: -3px;
-    background: #EC1D23;
+    background: rgb(235, 30, 37, .9);
     padding: 35px;
     text-align: center;
     font-size: 50px;
@@ -91,7 +90,7 @@ main {
     border: 3px solid #EC1D23;
     border-radius: 7px;
     box-shadow: 3px 2px 2px #EC1D23;
-    margin-top: 25vh;
+    margin-top: 20vh;
     padding: 15px;
     line-height: 30px;
     background-color: rgb(254,255,215);
@@ -163,7 +162,17 @@ li {
     box-shadow: 4px 4px 2px rgb(56, 56, 56);
 }
 
+header, a {
+    color: whitesmoke;
+}
+
+a {
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+}
+
 footer {
     text-align: center;
     padding: 20px;
+    background: rgb(235, 30, 37, .9);
 }
