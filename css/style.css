@@ -50,6 +50,7 @@ table {
 /* Custom Styling */
 
 * {
+    font-family: 'Oswald', sans-serif;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -57,7 +58,7 @@ table {
 
 body {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
     color: whitesmoke;
     background-image: linear-gradient(rgba(0, 0, 0 ,0.3), rgba(0,0,0,0.3)),
@@ -68,15 +69,19 @@ body {
 }
 
 header {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: -3px;
     background: #EC1D23;
     padding: 35px;
     text-align: center;
-    font-size: 42px;
+    font-size: 50px;
+    font-weight: 800;
 }
 
 main {
     flex: 1;
     align-self: center;
+    letter-spacing: -.3px;
 }
 
 .get-character {
@@ -89,30 +94,76 @@ main {
     margin-top: 25vh;
     padding: 15px;
     line-height: 30px;
-    background-color: #797676;
-    color: black;
+    background-color: rgb(254,255,215);
+    color: rgb(56, 56, 56);
+    font-size: 18px;
+}
+
+.character-name {
+    width: 170px;
+}
+
+.submit {
+    background: #EC1D23;
+    color: whitesmoke;
+    border: 1px solid rgb(56, 56, 56);
+    letter-spacing: normal;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px black;
+    cursor: pointer;
+}
+
+input, button {
+    border-radius: 4px;
+    font-size: 15px;
 }
 
 .char-card {
-    color: black;
-    width: 400px;
-    height: 600px;
+    border: px solid #EC1D23;
+    color: rgb(56, 56, 56);
+    width: 720px;
+    height: 435px;
     padding: 20px;
-    gap: 40px;
-    line-height: 20px;
+    gap: 5px;
+    line-height: 25px;
     display: flex;
-    flex-flow: column;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    background: #797676;
+    background: rgb(254,255,215);
+    margin-top: 15vh;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    align-content: flex-start;
+    justify-content: flex-end;
+    width: 20px;
+    cursor: pointer;
+}
+
+ul {
+    width: 325px;
+    background: whitesmoke;
+    padding: 5px;
+    box-shadow: 4px 4px 2px rgb(56, 56, 56);
+    border: 1px solid rgb(56, 56, 56);
+}
+
+li {
+    padding: 3px;
 }
 
 .char-picture {
-    width: 250px;
+    width: 290px;
+    border: 2px solid rgb(56, 56, 56);
+    box-shadow: 4px 4px 2px rgb(56, 56, 56);
 }
 
 footer {
     text-align: center;
     padding: 20px;
 }
-
