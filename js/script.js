@@ -37,7 +37,7 @@ function handleGetData(event) {
 }
 
 function randomChar() {
-    const chars = [30, 489, 313, 346, 414, 655, 659, 470, 720, 226, 620, 566, 579, 587, 107, 149, 156, 379];
+    const chars = [30, 489, 313, 346, 414, 655, 659, 470, 226, 620, 566, 579, 587, 107, 149, 157, 379, 714];
     const randomChar = Math.floor(Math.random() * chars.length)
     const allChar = `https://www.superheroapi.com/api.php/338148107599656/${chars[randomChar]}`
     $.ajax(allChar).then((data) => {
